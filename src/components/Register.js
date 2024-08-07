@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword, auth } from '../firebaseConfig';
 import { Link, useNavigate } from 'react-router-dom';
-import "./register.css"
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -21,14 +20,14 @@ const Register = () => {
 
     return (
         <div className='Register'>
-            <h2 className='text-register'>Register</h2>
+            <h2 className='h2'>Register</h2>
             <form onSubmit={handleRegister}>
                 <p id="message"></p>
-                <input className='for-register' type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                <input className='for-register' type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                <button className='button-register' type="submit">Register</button>
+                <input className='for-input' type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                <input className='for-input' type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                <button className='for-submit' type="submit">Register</button>
             </form>
-            <h3>Déja Inscrit ? <Link to="/login" className='link-login'>Connectez-vous</Link></h3>
+            <h3 className='h3'>Déja Inscrit ? <Link to="/login" className='link'>Connectez-vous</Link></h3>
         </div>
     );
 };

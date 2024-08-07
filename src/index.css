@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* L O G I N  &  S I G N  P A G E */
+
+.h2 {
+    font-size: 35px;
+    color: hsl(240, 64%, 49%);
+    margin-bottom: 25px;
+}
+
+.link {
+    font-size: 16px;
+    color: hsl(240, 64%, 49%);
+    text-decoration: none;
+}
+
+.h3 {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#message {
+    font-size: 18px;
+    color: hsl(0, 66%, 51%);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.Login, .Register {
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+    margin: auto;
+    width: max-content;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.for-input {
+    display: block;
+    border: none;
+    margin: 20px;
+    width: 300px;
+    padding: 13px;
+    outline: none;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.for-submit {
+    border: none;
+    background-color: white;
+    color: hsl(240, 64%, 49%);
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* T O D O P A G E */
+
+.name {
+    border: none;
+    margin: 20px;
+    width: 300px;
+    padding: 13px;
+    outline: none;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.Todo {
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+    margin: auto;
+    display: block;
+    width: max-content;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.li {
+    font-size: 18px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+    outline: none;
+    margin: 10px;
+    accent-color: hsl(240, 64%, 49%);
+}
+
+.btn {
+    border: none;
+    background-color: white;
+    color: hsl(240, 64%, 49%);
+    padding: 17px;
+    width: max-content;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.delete {
+    border: none;
+    background-color: white;
+    color: hsl(0, 66%, 51%);
+    padding: 17px;
+    width: max-content;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+

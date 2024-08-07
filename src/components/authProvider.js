@@ -9,11 +9,7 @@ export const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setUserId(user.uid);
-            } else {
-                setUserId(null);
-            }
+            user ? setUserId(user.uid) : setUserId(null);
         });
         return () => unsubscribe();
     }, [auth]);
